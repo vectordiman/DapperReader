@@ -1,4 +1,7 @@
-﻿using DapperReader.Entities;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using DapperReader.Entities;
 using DapperReader.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

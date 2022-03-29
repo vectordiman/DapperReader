@@ -1,4 +1,6 @@
-﻿using DapperReader.Entities;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using DapperReader.Entities;
 
 namespace DapperReader.Interfaces;
 
