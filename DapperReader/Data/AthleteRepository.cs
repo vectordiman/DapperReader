@@ -26,7 +26,7 @@ public class AthleteRepository: IAthleteRepository
         return await _sqlConnection.QueryAsync<Athlete>(sql, null, _dbTransaction);
     }
 
-    public async Task<Athlete> GetAthleteAsync(int id)
+    public async Task<Athlete?> GetAthleteAsync(int id)
     {
         var sql = "SELECT * FROM [sportix].dbo.Athletes WHERE Id=@id";
         return await _sqlConnection.QueryFirstOrDefaultAsync<Athlete>(sql, new { id }, _dbTransaction);

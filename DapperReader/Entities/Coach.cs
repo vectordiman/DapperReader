@@ -1,4 +1,6 @@
-﻿namespace DapperReader.Entities;
+﻿using System.Collections.Generic;
+
+namespace DapperReader.Entities;
 
 public class Coach
 {
@@ -6,4 +8,6 @@ public class Coach
     public string? Name { get; set; }
     public string? LastName { get; set; }
     public string? Email { get; set; }
+    
+    public List<Sport>? Sports { get; set; }
 }

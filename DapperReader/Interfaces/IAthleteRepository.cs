@@ -8,5 +8,5 @@ public interface IAthleteRepository
 {
     Task<IEnumerable<Athlete>> GetAthletesAsync();
     
-    Task<Athlete> GetAthleteAsync(int id);
+    Task<Athlete?> GetAthleteAsync(int id);
 }
